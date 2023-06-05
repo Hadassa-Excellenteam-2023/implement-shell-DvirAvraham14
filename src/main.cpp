@@ -183,9 +183,11 @@
 //    return isBackground;
 //}
 //
-//
-//// -------- main --------
-//int main() {
+
+#include "Shell.h"
+
+// -------- main --------
+int main() {
 //    while (true) {
 //        std::string command = getCommand();
 //        bool isBackground = isBackgroundCommand(command);
@@ -198,7 +200,9 @@
 //            executeCommand(command, isBackground);
 //        }
 //    }
-//
-//    return 0;
-//}
-//
+    Shell shell;
+    shell.run();
+
+    return 0;
+}
+
